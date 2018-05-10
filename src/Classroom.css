@@ -1,0 +1,64 @@
+.full-classrom {
+  position: relative;
+  overflow-y: hidden;
+
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.chat-display {
+  position: absolute;
+  left: 7%;
+  top: 7%; /* TODO should change with width, not height */
+  width: 86%; /* 100 -7 - 7 */
+  display: flex;
+  flex-direction: column;
+  /* background: white; */
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.chat-bubble-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-right {
+  justify-content: flex-end;
+}
+
+.chat-bubble {
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.chat-me {
+  background: rgb(26, 132, 245);
+  color: white;
+}
+
+.chat-them {
+  background: rgb(229, 229, 234);
+  color: black;
+}
+
+.chat-input-container {
+  position: absolute;
+  bottom: 50px;
+  left: 7%;
+  right: 7%;
+  display: flex;
+  flex-direction: 1;
+}
+
+.chat-input {
+  flex: 1;
+  height: 2rem;
+}
