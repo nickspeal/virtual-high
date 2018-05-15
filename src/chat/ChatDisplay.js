@@ -38,7 +38,6 @@ class ChatDisplay extends Component {
     // If a new student chat came in, scroll to the bottom
     // This handles the case of clicking an MC input and wanting to see it!
     if(prevProps.chats !== this.props.chats && this.props.chats[this.props.chats.length -1].name === 'student') {
-      console.log("New student chat. Scrolling to bottom.");
       this.scrollIncrement();
     }
   }
