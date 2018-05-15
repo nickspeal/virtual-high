@@ -95,14 +95,16 @@
 .chat-mc-button {
   min-height: 2rem;
   min-width: 10rem;
-  background-color: rgba(232, 211, 195, 0.5); /* or transparent */
-  border: 2px solid rgb(200, 200, 250);
+  background-color: rgba(232, 211, 195, 0.8); /* or transparent */
+  border: 2px solid rgb(43, 83, 130);
   border-radius: 0.5rem;
   margin: 0 2rem;
-  color: rgb(200, 200, 250);
+  color: rgb(43, 83, 130);
+  font-weight: bold;
 }
 
 .chat-mc-button:hover {
   color: white;
-  background-color: rgb(200, 200, 250);
+  background-color: rgb(43, 83, 130);
+  cursor: grab;
 }
