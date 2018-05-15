@@ -27,10 +27,12 @@ class ChatDisplay extends Component {
 
   render() {
     return (
-      <div className="chat-display">
-        {this.props.chats.map(chat => <ChatBubble chat={chat} key={chat.body} />)}
-        {this.props.isTeacherTyping && <ChatBubble chat={teacherTypingChat} />}
-        {this.props.isStudentTyping && <ChatBubble chat={studentTypingChat} />}
+      <div className="chat-display-outer">
+        <div className="chat-display-inner">
+          {this.props.chats.map(chat => <ChatBubble chat={chat} key={chat.body} />)}
+          {this.props.isTeacherTyping && <ChatBubble chat={teacherTypingChat} />}
+          {this.props.isStudentTyping && <ChatBubble chat={studentTypingChat} />}
+        </div>
       </div>
     );
   }
