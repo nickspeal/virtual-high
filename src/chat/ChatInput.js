@@ -1,54 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../Classroom.css';
+import ChatTextInput from './ChatTextInput';
+import ChatMCInput from './ChatMCInput';
 
 class ChatInput extends Component {
   static propTypes = {
+      currentMessage: PropTypes.shape(),
       onSubmit: PropTypes.func.isRequired,
-  }
-
-  state = {
-    text: '',
-  }
-
-  onTextInput = (e) => {
-    this.setState({ text: e.target.value });
-  }
-
-  onSubmit = () => {
-    if (this.okToSubmit()) {
-      this.props.onSubmit(this.state.text);
-      this.setState({ text: '' });
-    }
-  }
-
-  onKeyUp = (e) => {
-    if (e.key === 'Enter') {
-      this.onSubmit();
-    }
-  }
-
-  okToSubmit = () => {
-    // Validate input to make sure it's OK to submit
-    // For now, just make sure it's not empty.
-    return this.state.text !== '';
+      onProgressChange: PropTypes.func.isRequired,
+      onTypingChange: PropTypes.func.isRequired,
   }
 
   render() {
-    return (
-      <div className="chat-input-container">
-        <input
-          value={this.state.text}
-          onChange={this.onTextInput}
-          onKeyUp={this.onKeyUp}
-          placeholder="Type a message to the teacher..."
-          className="chat-input"
-        />
-        <button onClick={this.onSubmit} disabled={!this.okToSubmit()}>
-          Send
-        </button>
-      </div>
-    );
+    const type = this.props.currentMessage && this.props.currentMessage.responseType;
+    switch (type) {
+      case "text":
+        return <ChatTextInput currentMessage={this.props.currentMessage} onSubmit={this.props.onSubmit} onProgressChange={this.props.onProgressChange} onTypingChange={this.props.onTypingChange}/>;
+      case "mc":
+        return <ChatMCInput currentMessage={this.props.currentMessage} onSubmit={this.props.onSubmit} onProgressChange={this.props.onProgressChange} />;
+      case "delay":
+      default:
+        return null;
+    }
   }
 }
 

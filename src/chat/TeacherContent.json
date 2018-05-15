@@ -1,9 +1,62 @@
 {
-  "intro": [
-    "Hi! Welcome to Virtual High! Is this your first day here?",
-    "Alright, well I'm glad you've arrived. My name is Ms. Teacher. What's yours?",
-    "Nice to meet you! Since you're new here I'll give you some background on what we do. School is one of the most important institutions in society because it enables people to do everything else. Teachers and principals and everybody else in the system work day in and day out to make schools the best they can be. As software transforms nearly every part of our lives, we're thinking about how it can be used to make education better. It has potential to make the best schools better and to extend these benefits to all the schools because duplication is nearly free.",
-    "But care needs to be taken to make sure that when we integrate technology into classrooms, we are actually addressing and improving upon the biggest and most urgent problems. What we don't want to do is replicate existing problems in a software-mediated classroom. That's the thing with Virtual High. It actually captures some of the problems with traditional classrooms that software could solve, but it repeates them through a computer screen. The hope is that this farce highlights some of the inefficiencies that have held back previois geneartions and helps you think about effective solutions to move mast them for next generations.",
-    "Oh! That's the bell! We'll get back to this later. Our 9am class is History."
-  ]
+  "intro": {
+    "0": {
+      "message": "Hi! Welcome to Virtual High! Is this your first day here?",
+      "responseType": "mc",
+      "responses": [
+        {
+          "choice": "Yes",
+          "id": "1"
+        },
+        {
+          "choice": "No",
+          "id": "2"
+        }
+      ]
+    },
+    "1": {
+      "message": "Alright, well I'm glad you've arrived. My name is Ms. Teacher. What's yours?",
+      "responseType": "text",
+      "next": "3"
+    },
+    "2": {
+      "message": "Great, welcome back! Please sit patiently for a few minutes while I run through this introduction for the rest of the class. Can you please remind me your name?",
+      "responseType": "text",
+      "next": "4"
+    },
+    "3": {
+      "message": "Nice to meet you, %%! Since you're new here, I'll give you some background on what we do.",
+      "responseType": "delay",
+      "next": "5"
+    },
+    "4": {
+      "message": "Thanks, %%! My apologies. My name is Ms. Teacher. Alright let's get started.",
+      "responseType": "delay",
+      "next": "5"
+    },
+    "5": {
+      "message": "School is one of the most important institutions in society because it enables people to do everything else. Teachers and principals and everybody else in the system work day in and day out to make schools the best they can be. As software transforms nearly every part of our lives, we're thinking about how it can be used to make education better. It has potential to make the best schools better and to extend these benefits to all the schools because duplication is nearly free.",
+      "responseType": "delay",
+      "next": "6"
+    },
+    "6": {
+      "message": "But care needs to be taken to make sure that when we integrate technology into classrooms, we are actually addressing and improving upon the biggest and most urgent problems. What we don't want to do is replicate existing problems in a software-mediated classroom. That's the thing with Virtual High. It actually captures some of the problems with traditional classrooms that software could solve, but it repeates them through a computer screen. The hope is that this farce highlights some of the inefficiencies that have held back previois geneartions and helps you think about effective solutions to move mast them for next generations.",
+      "responseType": "delay",
+      "next": "7"
+    },
+    "7": {
+      "message": "Oh! That's the bell! We'll get back to this later. Our 9am class is History.",
+      "responseType": "mc",
+      "responses": [
+        {
+          "choice": "Let's get started!",
+          "id": "8"
+        }
+      ]
+    },
+    "8": {
+      "message": "Placeholder for history class",
+      "responseType": "delay"
+    }
+  }
 }

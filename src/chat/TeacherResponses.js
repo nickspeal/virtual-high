@@ -4,46 +4,26 @@ import teacherContent from './TeacherContent.json';
 
 class ChatInput extends Component {
   static propTypes = {
-      chats: PropTypes.arrayOf(
-        PropTypes.shape({
-          name: PropTypes.string.isRequired,
-          body: PropTypes.string.isRequired,
-        }),
-      ),
-      onSubmit: PropTypes.func.isRequired,
+      progress: PropTypes.string.isRequired,
+      onRead: PropTypes.func.isRequired,
   }
 
-  state = {
-    introProgress: 0,
-  }
-
-  sendIntro = () => {
-    const i = this.state.introProgress;
-    if (i < teacherContent.intro.length) {
-      const message = teacherContent.intro[i];
-      console.log(message);
-      this.setState({ introProgress: this.state.introProgress + 1 });
-      setTimeout(() => this.props.onSubmit(message, 'teacher'), 1000);
-    } else {
-      console.log("sendIntro called but no more content to share");
-    }
-
-  }
-
-  latestStudentMessage = (props) => {
-    return props.chats.filter(chat => chat.name === 'student').pop();
+  sendMessage = (idx) => {
+    const DELAY = 1000; // 1000 millis
+    setTimeout(
+      () => this.props.onRead(teacherContent.intro[idx]),
+      DELAY,
+    );
   }
 
   componentDidMount = () => {
-    this.sendIntro();
+    this.sendMessage(this.props.progress);
   }
 
   componentDidUpdate = (prevProps, nextState) => {
-      // Step through the intro whenever a new chat from the student comes in
-      if (this.latestStudentMessage(prevProps) !== this.latestStudentMessage(this.props)) {
-        console.log("new student message: ", this.latestStudentMessage(prevProps));
-        this.sendIntro();
-      }
+    if(prevProps.progress !== this.props.progress) {
+      this.sendMessage(this.props.progress);
+    }
   }
 
   render() {
