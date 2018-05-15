@@ -1,7 +1,6 @@
 .full-classrom {
   position: relative;
   overflow-y: hidden;
-
 }
 
 .image {
@@ -28,6 +27,17 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+}
+
+.chat-display-scroll-button {
+  position: absolute;
+  width: 100%;
+  bottom: -40px;
+  background: transparent;
+  color: rgb(43, 83, 130);
+  border: none;
+  cursor: grab;
+  animation: fadein 1s;
 }
 
 .chat-bubble-container {

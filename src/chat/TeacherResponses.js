@@ -9,7 +9,7 @@ class ChatInput extends Component {
   }
 
   sendMessage = (idx) => {
-    const DELAY = 1000; // 1000 millis
+    const DELAY = 200; // 1000 millis
     setTimeout(
       () => this.props.onRead(teacherContent.intro[idx]),
       DELAY,
