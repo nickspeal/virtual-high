@@ -57,7 +57,7 @@ class Classroom extends Component {
   render() {
     return (
       <div className="full-classroom">
-        <img src={chalkboard} className="image"/>
+        <img src={chalkboard} className="image" alt="Classroom Background"/>
         <ChatDisplay
           chats={this.state.chats}
           isTeacherTyping={this.state.isTeacherTyping}
