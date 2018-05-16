@@ -37,7 +37,7 @@ class ChatDisplay extends Component {
   componentDidUpdate(prevProps) {
     // If a new student chat came in, scroll to the bottom
     // This handles the case of clicking an MC input and wanting to see it!
-    if(prevProps.chats !== this.props.chats && this.props.chats[this.props.chats.length -1].name === 'student') {
+    if(prevProps.chats !== this.props.chats && this.props.chats.length > 0 && this.props.chats[this.props.chats.length -1].name === 'student') {
       this.scrollIncrement();
     }
   }
@@ -52,7 +52,7 @@ class ChatDisplay extends Component {
 
   // Calls itself recursively
   scrollIncrement = (maxScrollLimit) => {
-    const VERTICAL_INCREMENT = 10; //px
+    const VERTICAL_INCREMENT = 2; //px
     const TIME_INCREMENT = 10; //ms
 
     const prevScrollTop = this.scrollableDiv.current.scrollTop;

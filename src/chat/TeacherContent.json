@@ -1,5 +1,5 @@
 {
-  "intro": {
+  "Introduction": {
     "0": {
       "message": "Hi! Welcome to Virtual High! Is this your first day here?",
       "responseType": "mc",
@@ -56,6 +56,24 @@
     },
     "8": {
       "message": "Placeholder for history class",
+      "responseType": "delay"
+    }
+  },
+  "History": {
+    "0": {
+      "message": "Placeholder for history class",
+      "responseType": "delay"
+    }
+  },
+  "Music": {
+    "0": {
+      "message": "Placeholder for Music class",
+      "responseType": "delay"
+    }
+  },
+  "Substitute": {
+    "0": {
+      "message": "Placeholder for Substitute class",
       "responseType": "delay"
     }
   }

@@ -1,0 +1,43 @@
+.menu {
+  position: absolute;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.menu-title {
+  cursor: grab;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.hamburger {
+  margin-right: 1rem;
+}
+
+hr {
+  color: #fff;
+  width: 100%;
+}
+
+.menu-open {
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: grab;
+}
+
+.menu-item:hover {
+  color: rgb(200, 200, 200);
+  background-color: rgb(50, 50, 50);
+  border-radius: 4px;
+}

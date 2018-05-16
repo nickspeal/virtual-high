@@ -3,6 +3,7 @@ import chalkboard from './images/chalkboard.jpg';
 import ChatDisplay from './chat/ChatDisplay';
 import ChatInput from './chat/ChatInput';
 import TeacherResponses from './chat/TeacherResponses';
+import Menu from './menu/Menu';
 import './Classroom.css';
 
 class Classroom extends Component {
@@ -12,6 +13,12 @@ class Classroom extends Component {
     currentMessage: undefined,
     isTeacherTyping: false,
     isStudentTyping: false,
+  }
+
+  componentWillUpdate(nextProps) {
+    if(this.props.match.params.lesson !== nextProps.match.params.lesson) {
+        this.setState({ chats: [], progress: '0' });
+    }
   }
 
   onChatSubmit = (body, name='student') => {
@@ -57,6 +64,7 @@ class Classroom extends Component {
   render() {
     return (
       <div className="full-classroom">
+        <Menu />
         <img src={chalkboard} className="image" alt="Classroom Background"/>
         <ChatDisplay
           chats={this.state.chats}
@@ -72,6 +80,7 @@ class Classroom extends Component {
         <TeacherResponses
           progress={this.state.progress}
           onRead={this.onRead}
+          lesson={this.props.match.params.lesson}
         />
       </div>
     );
