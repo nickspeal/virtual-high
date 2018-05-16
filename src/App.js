@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Classroom from './Classroom';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 class App extends Component {
   render() {
