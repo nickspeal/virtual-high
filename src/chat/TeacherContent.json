@@ -168,11 +168,5 @@
       "message": "https://www.youtube.com/watch?v=yMvpJDbWX_c",
       "responseType": "delay"
     }
-  },
-  "Substitute": {
-    "0": {
-      "message": "Placeholder for Substitute class",
-      "responseType": "delay"
-    }
   }
 }
