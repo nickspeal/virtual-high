@@ -168,5 +168,58 @@
       "message": "https://www.youtube.com/watch?v=yMvpJDbWX_c",
       "responseType": "delay"
     }
+  },
+  "Intro To Math": {
+    "0": {
+      "message": "Welcome class! Today we're going to learn about addition and subtraction. Since some of you may have learned this last year and others may not, we're going to start out with a quiz to see where everyone stands.",
+      "responseType": "delay",
+      "next": "1"
+    },
+    "1": {
+      "message": "What's 6 + 9?",
+      "responseType": "text",
+      "next": "2"
+    },
+    "2": {
+      "message": "What's 16 + 29?",
+      "responseType": "text",
+      "next": "3"
+    },
+    "3": {
+      "message": "What's 99 - 11?",
+      "responseType": "text",
+      "next": "4"
+    },
+    "4": {
+      "message": "Alright, it looks like we got some mixed responses. Some of you got those right and some of you didn't. To make sure we're all on the same page, we're going to review the core concepts.",
+      "responseType": "delay",
+      "next": "5"
+    },
+    "5": {
+      "message": "When you add single digit numbers, imagine you have two baskets of apples, one with 6 apples and another with 9. If you combine all the apples into one basket, how many do we have? ",
+      "responseType": "mc",
+      "responses": [{
+        "choice": "15",
+        "id": "6"}]
+    },
+    "6": {
+      "message": "Correct! We have 15 apples.",
+      "responseType": "delay",
+      "next": "7"
+    },
+    "7": {
+      "message": "For adding double-digit numbers, we go from right to left, adding up the columns. To add 16 + 29, we first add 6 + 9 to get 15. The digit in the ones column is 5 and we carry the 1. Then we add 1 + 2 to get 3, and then add the carried 1 to get 4. So the final answer is 45!",
+      "responseType": "delay",
+      "next": "8"
+    },
+    "8": {
+      "message": "For subtracting double-digit numbers, we do the same thing. Starting from right to left, we subtract 9 - 1, twice. This leaves us with an 8 in both the ones column and the tens column and the final answer is 88.",
+      "responseType": "delay",
+      "next": "9"
+    },
+    "9": {
+      "message": "I know this has been review for some of you, but this is what we need to do sometimes because everybody learns at a different pace. In other subjects, you'll appreciate the review while the rest of the class waits. Try the Advanced Math lesson, for example!",
+      "responseType": "delay"
+    }
   }
 }
