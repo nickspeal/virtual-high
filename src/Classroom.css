@@ -1,6 +1,7 @@
-.full-classrom {
+.full-classroom {
   position: relative;
-  overflow-y: hidden;
+  max-width: calc(1.5*100vh);
+  height: 100vh;
 }
 
 .image {
@@ -9,6 +10,7 @@
   top: 0;
   width: 100%;
   z-index: 0;
+  max-width: calc(1.5*100vh);
 }
 
 .chat-display-outer {
