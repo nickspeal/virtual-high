@@ -25,12 +25,12 @@
       "next": "4"
     },
     "3": {
-      "message": "Nice to meet you, %%! Since you're new here, I'll give you some background on what we do.",
+      "message": "Nice to meet you! Since you're new here, I'll give you some background on what we do.",
       "responseType": "delay",
       "next": "5"
     },
     "4": {
-      "message": "Thanks, %%! My apologies. My name is Ms. Teacher. Alright let's get started.",
+      "message": "Thanks! My apologies. My name is Ms. Teacher. Alright let's get started.",
       "responseType": "delay",
       "next": "5"
     },
@@ -45,23 +45,106 @@
       "next": "7"
     },
     "7": {
-      "message": "Oh! That's the bell! We'll get back to this later. Our 9am class is History.",
-      "responseType": "mc",
-      "responses": [
-        {
-          "choice": "Let's get started!",
-          "id": "8"
-        }
-      ]
-    },
-    "8": {
-      "message": "Placeholder for history class",
+      "message": "Oh! That's the bell! We'll get back to this later. Check the curriculum menu in the top-left corner to find your first class.",
       "responseType": "delay"
     }
   },
   "History": {
     "0": {
-      "message": "Placeholder for history class",
+      "message": "Hello everyone, welcome to History class! Since this isn't a 'creative' subject like Art, please make sure to sit patiently as we go through today's lesson. Interruptions will be punished! There will be a quiz at the end to determine how good you are at history.",
+      "responseType": "delay",
+      "next": "1"
+    },
+    "1": {
+      "message": "Today's topic is the History of Education in the United States. You may be able to learn similar content by reading Wikipedia, but I'm going to spend the next 45 minutes lecturing you about it to make sure you learn better.",
+      "responseType": "delay",
+      "next": "2"
+    },
+    "2": {
+      "message": "The first American schools in the thirteen original colonies opened in the 17th century. Boston Latin School was founded in 1635 and is both the first public school and oldest existing school in the United States. The first free taxpayer-supported public school in North America, the Mather School, was opened in Dorchester, Massachusetts, in 1639. Cremin (1970) stresses that colonists tried at first to educate by the traditional English methods of family, church, community, and apprenticeship, with schools later becoming the key agent in 'socialization.' At first, the rudiments of literacy and arithmetic were taught inside the family, assuming the parents had those skills. Literacy rates were much higher in New England because much of the population had been deeply involved in the Protestant Reformation and learned to read in order to read the Scriptures. Literacy was much lower in the South, where the Anglican Church was the established church. Single working-class people formed a large part of the population in the early years, arriving as indentured servants. The planter class did not support public education but arranged for private tutors for their children, and sent some to England at appropriate ages for further education.",
+      "responseType": "delay",
+      "next": "3"
+    },
+    "3": {
+      "message": "By the mid-19th century, the role of the schools in New England had expanded to such an extent that they took over many of the educational tasks traditionally handled by parents.",
+      "responseType": "delay",
+      "next": "4"
+    },
+    "4": {
+      "message": "All the New England colonies required towns to set up schools, and many did so. In 1642 the Massachusetts Bay Colony made 'proper' education compulsory; other New England colonies followed this example. Similar statutes were adopted in other colonies in the 1640s and 1650s. The schools were all male and all white, with few facilities for girls. In the 18th century, 'common schools' were established; students of all ages were under the control of one teacher in one room. Although they were publicly supplied at the local (town) level, they were not free. Students' families were charged tuition or 'rate bills.'",
+      "responseType": "delay",
+      "next": "5"
+    },
+    "5": {
+      "message": "The larger towns in New England opened grammar schools, the forerunner of the modern high school. The most famous was the Boston Latin School, which is still in operation as a public high school. Hopkins School in New Haven, Connecticut, was another. By the 1780s, most had been replaced by private academies. By the early 19th century New England operated a network of private high schools, now called 'prep schools,' typified by Phillips Andover Academy (1778), Phillips Exeter Academy (1781), and Deerfield Academy (1797). They became the major feeders for Ivy League colleges in the mid-19th century. These prep schools became coeducational in the 1970s, and remain highly prestigious in the 21st century.",
+      "responseType": "delay",
+      "next": "7"
+    },
+    "7": {
+      "message": "Residents of the Upper South, centered on the Chesapeake Bay, created some basic schools early in the colonial period. In late 17th century Maryland, the Catholic Jesuits operated some schools for Catholic students. Generally the planter class hired tutors for the education of their children or sent them to private schools. During the colonial years, some sent their sons to England or Scotland for schooling.",
+      "responseType": "delay",
+      "next": "9"
+    },
+    "9": {
+      "message": "In March 1620, George Thorpe sailed from Bristol for Virginia. He became a deputy in charge of 10,000 acres (4,000 ha) of land to be set aside for a university and Indian school. The plans for the school for Native Americans ended when George Thorpe was killed in the Indian Massacre of 1622. In Virginia, rudimentary schooling for the poor and paupers was provided by the local parish. Most elite parents either home schooled their children using peripatetic tutors or sent them to small local private schools.",
+      "responseType": "delay",
+      "next": "10"
+    },
+    "10": {
+      "message": "In the deep south (Georgia and South Carolina), schooling was carried out primarily by private venture teachers and a hodgepodge of publicly funded projects. In the colony of Georgia, at least ten grammar schools were in operation by 1770, many taught by ministers. The Bethesda Orphan House educated children. Dozens of private tutors and teachers advertised their service in newspapers. A study of women's signatures indicates a high degree of literacy in areas with schools. In South Carolina, scores of school projects were advertised in the South Carolina Gazette beginning in 1732. Although it is difficult to know how many ads yielded successful schools, many of the ventures advertised repeatedly over years, suggesting continuity.",
+      "responseType": "delay",
+      "next": "11"
+    },
+    "11": {
+      "message": "After the American Revolution, Georgia and South Carolina tried to start small public universities. Wealthy families sent their sons North to college. In Georgia public county academies for white students became more common, and after 1811 South Carolina opened a few free 'common schools' to teach reading, writing and arithmetic to whites.",
+      "responseType": "delay",
+      "next": "12"
+    },
+    "12": {
+      "message": "Republican governments during the Reconstruction era established the first public school systems to be supported by general taxes. Both whites and blacks would be admitted, but legislators agreed on racially segregated schools. (The few integrated schools were located in New Orleans).",
+      "responseType": "delay",
+      "next": "13"
+    },
+    "13": {
+      "message": "Particularly after white Democrats regained control of the state legislatures in former Confederate states, they consistently underfunded public schools for blacks which continued until 1954 when the United States Supreme Court declared state laws establishing separate public schools for black and white students to be unconstitutional.",
+      "responseType": "delay",
+      "next": "14"
+    },
+    "14": {
+      "message": "Generally public schooling in rural areas did not extend beyond the elementary grades for either whites or blacks. This was known as 'eighth grade school' After 1900, some cities began to establish high schools, primarily for middle class whites. In the 1930s roughly one fourth of the US population still lived and worked on farms and few rural Southerners of either race went beyond the 8th grade until after 1945.",
+      "responseType": "delay",
+      "next": "15"
+    },
+    "15": {
+      "message": "Alright, now it's time for the quiz. Please study your notes from today's class and let me know when you're ready.",
+      "responseType": "mc",
+      "responses": [{
+        "choice": "Take the quiz",
+        "id": "16"
+      }]
+    },
+    "16": {
+      "message": "In what year was Boston Latin School founded?",
+      "responseType": "text",
+      "next": "17"
+    },
+    "17": {
+      "message": "In what year did the Massachusetts Bay Colony make proper education compulsory?",
+      "responseType": "text",
+      "next": "18"
+    },
+    "18": {
+      "message": "What was the name of the earliest continually operating school for girls?",
+      "responseType": "text",
+      "next": "19"
+    },
+    "19": {
+      "message": "Alright, good work on the test everybody. I'll have these marked and get feedback to you next week.",
+      "responseType": "delay",
+      "next": "20"
+    },
+    "20": {
+      "message": "Check the curriculum menu in the top-left corner to find your next class.",
       "responseType": "delay"
     }
   },

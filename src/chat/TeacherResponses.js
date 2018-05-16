@@ -26,7 +26,7 @@ class ChatInput extends Component {
   }
 
   componentDidUpdate = (prevProps, nextState) => {
-    if(prevProps.progress < this.props.progress) {
+    if(Number(prevProps.progress) < Number(this.props.progress)) {
       this.sendMessage(this.props.progress);
     } else if (prevProps.lesson !== this.props.lesson) {
       // TODO hack. This "0" should come from a central place.

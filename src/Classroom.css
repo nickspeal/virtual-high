@@ -33,12 +33,13 @@
 .chat-display-scroll-button {
   position: absolute;
   width: 100%;
-  bottom: -40px;
+  bottom: -60px;
   background: transparent;
   color: rgb(43, 83, 130);
   border: none;
   cursor: grab;
   animation: fadein 1s;
+  font-size: 1rem;
 }
 
 .chat-bubble-container {
