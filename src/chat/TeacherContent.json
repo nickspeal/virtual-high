@@ -150,7 +150,22 @@
   },
   "Music": {
     "0": {
-      "message": "Placeholder for Music class",
+      "message": "Hello everyone, welcome to Music class! I'm sure you're all excited to become musicians! Unfortunately the music program has been underfunded long enough that we we can't afford to rent instruments this year.",
+      "responseType": "delay",
+      "next": "1"
+    },
+    "1": {
+      "message": "But don't worry, there's still lots we can learn about music! Today we're going to watch a movie called School Of Rock. Enjoy!",
+      "responseType": "delay",
+      "next": "2"
+    },
+    "1": {
+      "message": "But don't worry, there's still lots we can learn about music! Today we're going to watch a movie called School Of Rock. Enjoy!",
+      "responseType": "delay",
+      "next": "2"
+    },
+    "2": {
+      "message": "https://www.youtube.com/watch?v=yMvpJDbWX_c",
       "responseType": "delay"
     }
   },
