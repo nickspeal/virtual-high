@@ -1,6 +1,6 @@
 .full-classroom {
   position: relative;
-  max-width: calc(1.5*100vh);
+  max-width: calc(1800/1201*100vh);
   height: 100vh;
 }
 
@@ -10,7 +10,7 @@
   top: 0;
   width: 100%;
   z-index: 0;
-  max-width: calc(1.5*100vh);
+  max-width: calc(1800/1201*100vh);
 }
 
 .chat-display-outer {
