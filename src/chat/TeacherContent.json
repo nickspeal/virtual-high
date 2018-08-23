@@ -35,7 +35,7 @@
       "next": "5"
     },
     "5": {
-      "message": "School is one of the most important institutions in society because it enables people to do everything else. Teachers and principals and everybody else in the system work day in and day out to make schools the best they can be. As software transforms nearly every part of our lives, we're thinking about how it can be used to make education better. It has potential to make the best schools better and to extend these benefits to all the schools because duplication is nearly free.",
+      "message": "School is one of the most important institutions in society because it enables people to do everything else. Teachers and principals and everybody else in the system work day in and day out to make schools the best they can be. As software transforms nearly every part of our lives, I'm thinking about how new tools can help in the classroom. It has potential to make the best schools better and to extend these benefits to all the schools because duplication is nearly free.",
       "responseType": "delay",
       "next": "6"
     },
@@ -219,6 +219,60 @@
     },
     "9": {
       "message": "I know this has been review for some of you, but this is what we need to do sometimes because everybody learns at a different pace. In other subjects, you'll appreciate the review while the rest of the class waits. Try the Advanced Math lesson, for example!",
+      "responseType": "delay"
+    }
+  },
+  "Test Preparation": {
+    "0": {
+      "message": "As you know, the state test is coming up in 3 months. It's really important, so we're going to put the rest of the curriculum on hold to make sure we are all ready for the test.",
+      "responseType": "delay",
+      "next": "1"
+    },
+    "1": {
+      "message": "Remember, next year's funding depends on the result, and if you flunk, you'll never get into college.",
+      "responseType": "delay",
+      "next": "2"
+    },
+    "2": {
+      "message": "Alright, here are some example questions from last year's math test. Let's make sure you know how to answer them.",
+      "responseType": "delay",
+      "next": "3"
+    },
+    "3": {
+      "message": "How many radians are in one complete circle?",
+      "responseType": "mc",
+      "responses": [
+        {
+          "choice": "π",
+          "id": "5"
+        },
+        {
+          "choice": "2π",
+          "id": "4"
+        },
+        {
+          "choice": "3π",
+          "id": "5"
+        }
+      ]
+    },
+    "4": {
+      "message": "Correct!",
+      "responseType": "delay",
+      "next": "6"
+    },
+    "5": {
+      "message": "Sorry... the correct answer was 2π",
+      "responseType": "delay",
+      "next": "6"
+    },
+    "6": {
+      "message": "How would you describe the transformation between a Sine wave and a Cosine wave?",
+      "responseType": "text",
+      "next": "7"
+    },
+    "7": {
+      "message": "Oh! That's the bell. Time to move on to your next class! We'll come back to this next time.",
       "responseType": "delay"
     }
   }
